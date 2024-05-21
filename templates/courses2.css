@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'text';
+}
+
+@font-face {
+    font-family: 'text';
+    src: url('../templates/colfax-regular-webfont.woff2') format('woff2'),
+        url('../templates/colfax-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #9289f4;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    padding-top: 50px; /* Added padding to move the content down */
+    text-align: center;
+    color: white;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    text-align: center;
+    max-width: 800px;
+}
+
+.subject-section {
+    padding: 50px 0;
+    margin: 20px 0;
+    background: linear-gradient(rgba(173, 216, 230, 0.6), rgba(173, 216, 230, 0.4)), url(images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.subject-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.subject-section ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.subject-section ul li {
+    margin-bottom: 10px;
+}
+
+.subject-section ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.subject-section ul li a:hover {
+    color: #007bff;
+}
