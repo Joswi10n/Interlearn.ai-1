@@ -1,4 +1,6 @@
 # interlearn.AI
-# interlearn.AI
-# interlearn.AI
-# interlearn.AI
+Created an AI education platform which incoporates Generative AI techniques in a RAG model which provides quality interactive learning for school students using PDF files of CBSE and ICSE chapters thereby eradicating the need for extra tuitions.
+So a student signs in to the platfrom and in his dashboard he sees chapters which is under his class and syllabus(which he/she regsitered with).
+The student can then select the chapter he wishes to learn, the student is shown 2 seperate options now .
+One is Chat with Chapter where the student gets the chance to get his questions answered using RAG and the llm used is llama2.0 .
+The second option is the students gets to learn the chapter ,topic by topic . Once student clicks the option he gets to see 10 important topics which is got by using RAG on the chapter . Now the student clicks the chapter , he/she wants to learn first .The student is now asked what level of explantion of topic is needed for him/her . After choosing that he gets a video explanation of the topic.(The answer from the RAG is converted to speech and a short clip of cartoon teaching is looped which is not lipsynced with the speech) FFMPEG is used to create the video . Now the student can ask his doubts based on the explantion through voice as well as through text . Then the doubts are also answered . 
