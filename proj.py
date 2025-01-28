@@ -175,7 +175,7 @@ def handle_question():
     return jsonify(qa1)
 import assemblyai
 # Replace 'YOUR_API_KEY' with your AssemblyAI API key
-assemblyai.api_key = '1795b787b73a459ca85de1b24dc31c44'
+assemblyai.api_key = 'YOUR_API_KEY'
 import assemblyai as aai
 
 @app.route('/save_audio', methods=['POST'])
