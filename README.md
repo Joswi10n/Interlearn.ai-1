@@ -1,6 +1,60 @@
-# interlearn.AI
-Created an AI education platform which incoporates Generative AI techniques in a RAG model which provides quality interactive learning for school students using PDF files of CBSE and ICSE chapters thereby eradicating the need for extra tuitions.
-So a student signs in to the platfrom and in his dashboard he sees chapters which is under his class and syllabus(which he/she regsitered with).
-The student can then select the chapter he wishes to learn, the student is shown 2 seperate options now .
-One is Chat with Chapter where the student gets the chance to get his questions answered using RAG and the llm used is llama2.0 .
-The second option is the students gets to learn the chapter ,topic by topic . Once student clicks the option he gets to see 10 important topics which is got by using RAG on the chapter . Now the student clicks the chapter , he/she wants to learn first .The student is now asked what level of explantion of topic is needed for him/her . After choosing that he gets a video explanation of the topic.(The answer from the RAG is converted to speech and a short clip of cartoon teaching is looped which is not lipsynced with the speech) FFMPEG is used to create the video . Now the student can ask his doubts based on the explantion through voice as well as through text . Then the doubts are also answered . 
+# 🎓 InterLearn.AI - AI-Powered Interactive Learning Platform
+
+**InterLearn.AI** is an **AI-driven education platform** that integrates **Generative AI, Retrieval-Augmented Generation (RAG), and automated video generation** to provide **high-quality interactive learning for school students**. It leverages **PDF files from CBSE and ICSE chapters** to create a personalized learning experience, reducing the need for extra tuition.
+
+## 🚀 Features
+
+- 📚 **Personalized Learning Dashboard**  
+  - Students see chapters based on their **class and syllabus** (CBSE/ICSE) upon signing in.
+
+- 🤖 **Chat with Chapter**  
+  - Students can ask **questions related to a chapter** using a **RAG-powered chatbot**.  
+  - The chatbot is backed by **Llama 2.0**, integrated using **LlamaIndex and LangChain**.
+
+- 📖 **Learn by Topic**  
+  - Students can **learn chapter topics in a structured way**.  
+  - The **10 most important topics** are extracted using **RAG on the chapter content**.  
+  - Students select a **topic to study first** and **choose the depth of explanation**.
+
+- 🎥 **AI-Generated Video Learning**  
+  - The topic explanation is **converted into speech** using **Google TTS**.  
+  - A **cartoon-style video** is generated using **FFMPEG** with **looped animations** (not lipsynced).
+
+- 🎤 **Voice & Text-Based Doubt Resolution**  
+  - Students can **ask doubts via voice or text**.  
+  - Doubts are transcribed using **AssemblyAI API**.  
+  - The AI system provides **contextual answers** based on the explanation.
+
+## 🏗️ Tech Stack
+
+| **Technology**            | **Usage**                                   |
+|--------------------------|-------------------------------------------|
+| **HTML, CSS, JavaScript** | Frontend UI & Styling                     |
+| **PHP & Flask**          | Backend logic                             |
+| **MySQL**                | Database for storing user data & chapters |
+| **Llama 2.0**            | Language Model for RAG                     |
+| **LangChain & LlamaIndex** | AI-based text processing & embeddings    |
+| **AssemblyAI API**        | Speech-to-Text (Transcription)            |
+| **Google TTS (gTTS)**     | Text-to-Speech for explanations           |
+| **FFMPEG**               | Video Generation                          |
+
+## 🛠️ Setup Instructions
+
+### Clone the Repository
+```sh
+git clone https://github.com/anselthomas/InterLearn.AI.git
+cd InterLearn.AI
+```
+
+### Database Setup
+- Import the **SQL schema** into **MySQL**.
+- Update `connect.php` with your **database credentials**.
+
+### Run the Application
+- **Backend**: Start the Flask and PHP servers.
+- **Frontend**: Open the website in a browser.
+
+## 📩 Contact
+📧 **anselkthomas@gmail.com**
+📧 **joswincraju2001@gmail.com**
+---
